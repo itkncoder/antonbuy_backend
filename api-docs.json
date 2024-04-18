@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "35eb0d0e-72d2-4f2c-bc2d-d0b6e7937e1e",
+		"name": "CARS-SHOP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29282441",
+		"_collection_link": "https://restless-astronaut-144385.postman.co/workspace/PET-PROJECTS~0a22ec38-0703-4ad9-89b1-3f5b57ae44b6/collection/29282441-35eb0d0e-72d2-4f2c-bc2d-d0b6e7937e1e?action=share&source=collection_link&creator=29282441"
+	},
+	"item": [
+		{
+			"name": "CREATE CAR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "marka",
+							"value": "Nimadir ok",
+							"type": "text"
+						},
+						{
+							"key": "model",
+							"value": "Nimadir ok",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "Nimadir ok",
+							"type": "text"
+						},
+						{
+							"key": "states",
+							"value": "Nimadir ok",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "Nimadir ok",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "Nimadir ok",
+							"type": "text"
+						},
+						{
+							"key": "volume",
+							"value": "Nimadir ok",
+							"type": "text"
+						},
+						{
+							"key": "mileage",
+							"value": "Nimadir ok",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "Nimadir ok",
+							"type": "text"
+						},
+						{
+							"key": "engine",
+							"value": "Nimadir ok",
+							"type": "text"
+						},
+						{
+							"key": "box",
+							"value": "Nimadir ok",
+							"type": "text"
+						},
+						{
+							"key": "steering",
+							"value": "Nimadir ok",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/home/coscli/Downloads/selfteach-ai-logo.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cars/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CARS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cars/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CAR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cars/all/661c8da47a3820e31443a3f6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"all",
+						"661c8da47a3820e31443a3f6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Car",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"marka\": \"Mercedes Benz\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cars/update/661c8da47a3820e31443a3f6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"update",
+						"661c8da47a3820e31443a3f6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cars/delete/661d7c4eabbcee7ef442e149",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cars",
+						"delete",
+						"661d7c4eabbcee7ef442e149"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
