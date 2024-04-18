@@ -9,7 +9,7 @@ module.exports = class ApiError extends Error {
     }
 
     static UnauthorizedError() {
-        return new ApiError(401, 'Admin login qilmagan');
+        return new ApiError(401, 'Админ не зашел');
     }
 
     static BadRequest(message, errors = []) {

@@ -17,7 +17,7 @@ class CarsController {
         try {
             const car = await carsModel.findById(req.params.id);
 
-            if (!car) throw ApiError.BadRequest('Bunday moshina topilmadi');
+            if (!car) throw ApiError.BadRequest('Товар не найден');
 
             return res.json({ status: 200, data: car });
         } catch (error) {
