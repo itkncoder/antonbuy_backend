@@ -13,6 +13,8 @@ async function createCar(
     engine,
     box,
     steering,
+    price,
+    title,
     image
 ) {
     const product = await carsModel.create({
@@ -28,6 +30,8 @@ async function createCar(
         engine: engine,
         box:box,
         steering: steering,
+        price: price,
+        title: title,
         image: image
     })
 

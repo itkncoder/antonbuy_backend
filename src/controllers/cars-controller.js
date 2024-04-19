@@ -17,7 +17,7 @@ class CarsController {
         try {
             const car = await carsModel.findById(req.params.id);
 
-            if (!car) throw ApiError.BadRequest('Товар не найден');
+            if (!car) throw ApiError.BadRequest('Bunday moshina topilmadi');
 
             return res.json({ status: 200, data: car });
         } catch (error) {
@@ -39,7 +39,9 @@ class CarsController {
                 color,
                 engine,
                 box,
-                steering
+                steering,
+                price,
+                title
             } = req.body;
 
             const car = await createCar(
@@ -55,6 +57,8 @@ class CarsController {
                 engine,
                 box,
                 steering,
+                price,
+                title,
                 req.file.filename,
             );
 

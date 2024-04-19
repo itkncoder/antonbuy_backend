@@ -14,6 +14,8 @@ const carsSchema = new Schema({
     engine: { type: String, required: true },
     box: { type: String, required: true },
     steering: { type: String, required: true },
+    price: { type: String, required: true },
+    title: { type: String, required: true },
     image: { type: String, required: true },
     createdAt: { type: Date, default: Date.now}, 
 })
