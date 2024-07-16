@@ -58,8 +58,7 @@ class CarsController {
                 box,
                 steering,
                 price,
-                title,
-                req.file.filename,
+                title
             );
 
             console.log(car);
