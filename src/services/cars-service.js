@@ -17,6 +17,15 @@ async function createCar(
   title,
   images
 ) {
+  const uploads = [];
+
+  images.forEach((image) => {
+    console.log(image);
+    uploads.push({ filename: image.filename });
+  });
+
+  console.log(uploads);
+
   const product = await carsModel.create({
     marka: marka,
     model: model,
@@ -32,7 +41,7 @@ async function createCar(
     steering: steering,
     price: price,
     title: title,
-    images: images,
+    images: uploads,
   });
 
   return product;
