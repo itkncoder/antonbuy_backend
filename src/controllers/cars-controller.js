@@ -41,6 +41,7 @@ class CarsController {
         steering,
         price,
         title,
+        images
       } = req.body;
 
       const car = await createCar(
@@ -58,6 +59,7 @@ class CarsController {
         steering,
         price,
         title,
+        images,
         req.files
       );
 

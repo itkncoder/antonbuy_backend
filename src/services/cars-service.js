@@ -17,9 +17,7 @@ async function createCar(
   title,
   images
 ) {
-  const uploads = images.map(file => ({ filename: file.filename }));
-
-  console.log(uploads);
+  const uploads = images.map(file => ({ filename: "2347234" }));
 
   const product = await carsModel.create({
     marka: marka,
