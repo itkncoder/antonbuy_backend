@@ -17,12 +17,7 @@ async function createCar(
   title,
   images
 ) {
-  const uploads = [];
-
-  images.forEach((image) => {
-    console.log(image);
-    uploads.push({ filename: image.filename });
-  });
+  const uploads = images.map(file => ({ filename: file.filename }));
 
   console.log(uploads);
 
